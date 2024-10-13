@@ -1,5 +1,6 @@
 ---
-
+import '@/styles/globals.css'
+import AppPage from '@/components/AppPage';
 ---
 
 <html lang="en">
@@ -8,9 +9,9 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Wake-on-LAN Dashboard</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+	<body class="bg-gray-100 text-gray-900">
+		<AppPage client:load />
 </html>
+
