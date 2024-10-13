@@ -60,11 +60,11 @@ export default function Page() {
       }
       console.log(data.message);
       setDevices(devices.map(d => d.mac === mac ? { ...d, isOnline: true } : d));
-      // You might want to add a user-facing notification here
+      // Add success message to user interface
       alert(`Wake-on-LAN packet sent to ${mac}`);
     } catch (error) {
       console.error('Error waking device:', error);
-      // Show an error message to the user
+      // Add error message to user interface
       alert(`Failed to wake device: ${error.message}`);
     }
   };
