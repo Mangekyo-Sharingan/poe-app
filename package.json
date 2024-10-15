@@ -3,8 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev:frontend": "astro dev",
-    "dev:backend": "node backend/server.js",
+    "dev:frontend": "astro dev --host",
+    "dev:backend": "node backend/server.js --host",
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
     "start": "astro dev",
     "build": "astro check && astro build",
